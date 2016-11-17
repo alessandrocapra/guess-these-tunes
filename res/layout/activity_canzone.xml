@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true" 
+    android:background ="@drawable/backgrounset">
+	
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
+    
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:hint="@string/editText"
+        android:textColorHint="#000"
+        android:layout_margin="10dp"
+        android:background="#97FFFFFF"
+        android:padding="5dp"/>
+    
+    <LinearLayout 
+        android:id="@+id/layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/editText">
+        
+    	<TextView 
+        	android:id="@+id/classifica"
+        	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_margin="10dp"
+        	android:textColor="#FFF" />
+    	
+    	<TextView 
+        	android:id="@+id/migliorPunteggio"
+        	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_margin="10dp"
+        	android:textColor="#FFF"
+        	android:gravity="right" />
+    	
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/layout"
+        android:background="#97FFFFFF" >
+
+        <ImageView
+            android:id="@+id/albumImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/songInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/songInfo" 
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/albumImage"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000" />
+    </RelativeLayout>
+        
+</RelativeLayout>

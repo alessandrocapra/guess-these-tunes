@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background ="@drawable/backgrounset" >
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+        
+        	<!--  View Title Label -->
+        	<TextView
+            	android:layout_width="0dp"
+            	android:layout_weight="2"
+	            android:layout_height="wrap_content"
+    	        android:layout_marginBottom="10dip"
+        	    android:text="REGISTRAZIONE"
+            	android:textSize="25dip"
+            	android:textStyle="bold"
+            	android:textColor="#FFF" />
+        	
+        	<Button
+            	android:id="@+id/btnLinkToLoginScreen"
+            	android:layout_width="0dp"
+            	android:layout_weight="1"
+            	android:layout_height="wrap_content"
+            	android:text="Login"
+            	android:textColor="#FFF"
+            	android:textStyle="bold" 
+            	android:background="#900099CC"/>
+        	
+        </LinearLayout>
+        
+        <!--  Name Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#FFF" />
+        
+		<View 
+   			android:layout_width="fill_parent"
+   			android:layout_height="1dp"       
+   			android:background="#FFF" />        
+        
+        <!--  Name TextField -->
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:background="#97FFFFFF"
+            android:padding="5dp"
+            android:layout_marginTop="5dp" />
+ 
+        <!--  Email Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Email" 
+            android:textColor="#FFF" 
+            android:layout_marginTop="6dp" />
+        
+		<View 
+   			android:layout_width="fill_parent"
+   			android:layout_height="1dp"       
+   			android:background="#FFF" /> 
+        
+        <!--  Email TextField -->
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="#97FFFFFF"
+            android:padding="5dp"
+            android:layout_marginTop="5dp" />
+ 
+        <!--  Password Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" 
+            android:text="Password"
+            android:textColor="#FFF" />
+        
+		<View 
+   			android:layout_width="fill_parent"
+   			android:layout_height="1dp"       
+   			android:background="#FFF" /> 
+        
+        <!--  Password TextField -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"
+            android:background="#97FFFFFF"
+            android:padding="5dp"
+            android:layout_marginTop="5dp" />
+        
+        <!--  Verify Password Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip" 
+            android:text="Verifica password"
+            android:textColor="#FFF" />
+        
+		<View 
+   			android:layout_width="fill_parent"
+   			android:layout_height="1dp"       
+   			android:background="#FFF" /> 
+        
+        <!--  Verify Password TextField -->
+        <EditText
+            android:id="@+id/verifyPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"
+            android:background="#97FFFFFF"
+            android:padding="5dp"
+            android:layout_marginTop="5dp" />
+        
+        <!--  Nazionalità Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" 
+            android:text="Nazionalità"
+            android:textColor="#FFF" />
+        
+		<View 
+   			android:layout_width="fill_parent"
+   			android:layout_height="1dp"       
+   			android:background="#FFF" /> 
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+           
+        	<Button
+            	android:id="@+id/btnNazionalita"
+            	style="?android:attr/buttonStyleSmall"
+            	android:layout_width="0dp"
+            	android:layout_weight="1"
+            	android:layout_height="wrap_content"
+            	android:text="Scegli"
+            	android:background="#97000066" 
+            	android:textColor="#FFF"/>
+        	
+        	<TextView 
+        	    android:id="@+id/tvNazionalita"
+        	    android:layout_width="0dp"
+        	    android:layout_weight="2"
+        	    android:layout_height="wrap_content"
+        	    android:text="Scegliere nazionalità.."
+        	    android:layout_marginLeft="10dp"
+        	    android:textColor="#FFF" />
+        	
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Registrati"
+            android:background="#97000066"
+            android:textColor="#FFF" />
+ 
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">Guess these Tunes</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_guessthesetunes">Guess These Tunes!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_genere_musicale">Genere Musicale</string>
+    <string name="title_activity_json">Json</string>
+    <string name="title_activity_canzone">Canzone</string>
+    <string name="title_activity_classifica">Classifica</string>
+    <string name="rockBtn">Rock</string>
+    <string name="rock">Rock</string>
+    <string name="pop">Pop</string>
+    <string name="reggae">Reggae</string>
+    <string name="jazz">Jazz</string>
+    <string name="metal">Metal</string>
+    <string name="country">Country</string>
+    <string name="rap">Rap</string>
+    <string name="dance">Dance</string>
+    <string name="btnSceltaGenere">Scelta Genere</string>
+    <string name="btnVisualizzaClassifica">Classifica</string>
+    <string name="editText">Inserire titolo canzone/artista...</string>
+    <string name="songInfo">Clicca sull\'immagine dell\'album per visitare la pagina iTunes dell\'artista.</string>
+    <string name="spinnerPrompt">Scegli nazionalità:</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_schermata_iniziale">Guess these Tunes!</string>
+
+</resources>

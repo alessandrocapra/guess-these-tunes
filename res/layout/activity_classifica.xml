@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="@drawable/backgrounset" >
+
+    <Button
+        android:id="@+id/btnSceltaGenere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:background="#900099CC"
+        android:text="@string/btnSceltaGenere"
+        android:textColor="#FFF" 
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvClassifica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSceltaGenere"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="14dp"
+        android:background="#95FFFFFF"
+        android:layout_gravity="center_vertical|left"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Scegli un genere per visualizzare le statistiche di gioco!"
+        android:textColor="#000066" />
+
+</RelativeLayout>

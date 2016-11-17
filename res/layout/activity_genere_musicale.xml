@@ -1,0 +1,273 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgrounset"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="#FFF" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeText"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rlRock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imgRock"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/rock"
+                android:src="@drawable/rock" />
+
+            <TextView
+                android:id="@+id/txtRock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgRock"
+                android:layout_centerHorizontal="true"
+                android:text="@string/rock"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rlPop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rlRock" >
+
+            <ImageButton
+                android:id="@+id/imgPop"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/pop"
+                android:src="@drawable/pop_1" />
+
+            <TextView
+                android:id="@+id/txtPop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgPop"
+                android:layout_centerHorizontal="true"
+                android:text="@string/pop"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rlReggae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rlPop" >
+
+            <ImageButton
+                android:id="@+id/imgReggae"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/reggae"
+                android:src="@drawable/reggae" />
+
+            <TextView
+                android:id="@+id/txtReggae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgReggae"
+                android:layout_centerHorizontal="true"
+                android:text="@string/reggae"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rlJazz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rlReggae" >
+
+            <ImageButton
+                android:id="@+id/imgJazz"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/jazz"
+                android:src="@drawable/jazz" />
+
+            <TextView
+                android:id="@+id/txtJazz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgJazz"
+                android:layout_centerHorizontal="true"
+                android:text="@string/jazz"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/secondRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstRow"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rlCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imgCountry"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/country"
+                android:src="@drawable/country" />
+
+            <TextView
+                android:id="@+id/txtCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgCountry"
+                android:layout_centerHorizontal="true"
+                android:text="@string/country"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rlDance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rlCountry" >
+
+            <ImageButton
+                android:id="@+id/imgDance"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/dance"
+                android:src="@drawable/dance_music" />
+
+            <TextView
+                android:id="@+id/txtDance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgDance"
+                android:layout_centerHorizontal="true"
+                android:text="@string/dance"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rlRap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rlDance" >
+
+            <ImageButton
+                android:id="@+id/imgRap"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/rap"
+                android:src="@drawable/rap" />
+
+            <TextView
+                android:id="@+id/txtRap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgRap"
+                android:layout_centerHorizontal="true"
+                android:text="@string/rap"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rlMetal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rlRap" >
+
+            <ImageButton
+                android:id="@+id/imgMetal"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/metal"
+                android:src="@drawable/metal1" />
+
+            <TextView
+                android:id="@+id/txtMetal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgMetal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/metal"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/etCaricamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondRow"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnClassifica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCaricamento"
+        android:layout_margin="10dp"
+        android:background="#97000066"
+        android:text="@string/btnVisualizzaClassifica"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btnCondivisione"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnClassifica"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="#97000066"
+        android:text="Condividi"
+        android:textColor="#FFF" />
+
+</RelativeLayout>
